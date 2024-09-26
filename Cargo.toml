@@ -1,0 +1,17 @@
+[package]
+name = "redis_events"
+version = "0.1.0"
+edition = "2021"
+description = "Redis Events is a Rust library that provides a simple and efficient way to watch for changes in Redis hash fields. It allows you to register callbacks for specific hash:field combinations and automatically triggers these callbacks when the values change. Uses polling under the hood allowing you to set polling rate based on your needs."
+license = "MIT"
+repository = "https://github.com/heety313/redis_events"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+redis = "0.22.0"
+
+[[example]]
+name = "example"
+path = "examples/example.rs"
+
